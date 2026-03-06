@@ -51,7 +51,7 @@ jobs:
           remote-password: ${{ secrets.FTP_PASSWORD }}
 
           # Path for specific folder on server for files deployment
-          remote-path: /homet/${{ secrets.FTP_USER }}/wardmininggroup.com/
+          remote-path: /home/${{ secrets.FTP_USER }}/wardmininggroup.com/
 
           # Port for SFTP access to server
           remote-port: 22
