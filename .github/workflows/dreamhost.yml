@@ -54,4 +54,4 @@ jobs:
           remote-path: /homet/${{ secrets.FTP_USER }}/wardmininggroup.com/
 
           # Port for SFTP access to server
-          remote-port: 221
+          remote-port: 22
