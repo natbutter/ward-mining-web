@@ -100,7 +100,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  min-height: 60px;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -791,12 +792,15 @@ footer {
    ANIMATIONS
    ============================================ */
 .reveal {
-  opacity: 0;
-  transform: translateY(28px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.reveal.active {
+.js .reveal {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+.js .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -817,25 +821,41 @@ footer {
     direction: ltr;
   }
 
-  .nav-links {
+  .js .nav-links {
     display: none;
   }
 
   .hamburger {
+    display: none;
+  }
+
+  .js .hamburger {
     display: block;
   }
 
-  .nav-links.open {
+  .nav-links.open,
+  .nav-links {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    background: rgba(10, 10, 10, 0.97);
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .js .nav-links.open {
     position: absolute;
     top: 60px;
     left: 0;
     right: 0;
-    background: rgba(10, 10, 10, 0.97);
-    padding: 1.5rem 2rem;
-    gap: 1.2rem;
-    border-bottom: 1px solid var(--border);
+  }
+
+  /* No JS fallback - don't position absolute, let it flow */
+  .nav-links {
+    position: static;
+    background: transparent;
+    padding: 1rem 0;
+    border: none;
   }
 
   .glass-card {
