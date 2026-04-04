@@ -30,13 +30,20 @@
     <!-- NAV -->
     <nav class="topnav">
       <div class="container nav-inner">
-        <span class="logo">WARD <span>MINING GROUP</span></span>
+        <a href="#" class="logo">
+          <img src="assets/logo.svg" alt="Ward Mining Group" class="logo-img">
+          <span>WARD <span>MINING GROUP</span></span>
+        </a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#subsidiaries">Subsidiaries</a></li>
-          <li><a href="#burtorn">BURTORN Silver</a></li>
-          <li><a href="#telluric-sands">Telluric Sands</a></li>
-          <li><a href="#telluric-exp">Telluric Exp.</a></li>
+          <li class="has-submenu">
+            <a href="#subsidiaries">Projects <small>&#9662;</small></a>
+            <ul class="submenu">
+              <li><a href="#burtorn">BURTORN Silver</a></li>
+              <li><a href="#telluric-sands">Telluric Sands</a></li>
+              <li><a href="#telluric-exp">Telluric Exp.</a></li>
+            </ul>
+          </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
@@ -48,19 +55,15 @@
       <div class="hero-bg"></div>
       <div class="container">
         <div class="hero-content">
-          <p class="hero-pre reveal">Ward Mining Group &mdash; Northern New South Wales</p>
-          <h1 class="reveal">Precision Engineering. <br><span class="accent">Global Resources.</span></h1>
+          <p class="hero-pre reveal">Ward Mining Group | Northern New South Wales</p>
+          <h1 class="reveal">Precision Exploration. <br><span class="accent">Mining with Purpose.</span></h1>
           <p class="tagline reveal">A diversified minerals group operating across silver, silica, and industrial sand
-            sectors in the New England Orogen and Clarence Valley regions of NSW.</p>
+            sectors in the New England Orogen and Clarence Valley regions of Australia.</p>
           <div class="cta-group reveal">
-            <a href="#subsidiaries" class="btn primary">Our Subsidiaries</a>
+            <a href="#subsidiaries" class="btn primary">Projects</a>
             <a href="#about" class="btn secondary">Our Story</a>
           </div>
         </div>
-      </div>
-      <div class="scroll-hint">
-        <span>Scroll</span>
-        <div class="scroll-line"></div>
       </div>
     </header>
 
@@ -71,7 +74,7 @@
           <h2>Legacy of Stability</h2>
           <p>Ward Mining Group is the parent company of a carefully selected portfolio of resource assets in New South
             Wales, Australia. We operate at the intersection of traditional expertise and modern technological
-            efficiency — specialising in the responsible extraction and processing of precious metals, premium silica,
+            efficiency, specialising in the responsible extraction and processing of precious metals, premium silica,
             and industrial sand resources.</p>
           <p style="margin-top:1rem;">Our strategy is built on three pillars: acquiring high-quality exploration
             tenements,
@@ -100,6 +103,72 @@
           <div class="stat-item">
             <span class="stat-num">NSW</span>
             <span class="stat-label">All Operations</span>
+          </div>
+        </div>
+
+
+
+        <!-- STAFF PROFILES -->
+        <div class="staff-section reveal">
+          <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+            <h2>Core Team</h2>
+            <p style="color: var(--text-muted);">Experienced leadership driving innovation in the minerals sector.</p>
+          </div>
+          <div class="staff-grid">
+            <div class="staff-card">
+              <div class="staff-photo-wrap">
+                <img src="assets/matt.jpg" alt="Matt" class="staff-photo">
+              </div>
+              <div class="staff-info">
+                <h3>Matt Stephens</h3>
+                <p class="staff-title">Managing Director</p>
+                <p class="staff-bio">Matt leads Ward Mining Group’s strategic growth through expert operational
+                  management and geo acquisitions. He is dedicated to fostering a high-performance culture.</p>
+              </div>
+            </div>
+            <div class="staff-card">
+              <div class="staff-photo-wrap">
+                <img src="assets/nate.jpg" alt="Nate" class="staff-photo">
+              </div>
+              <div class="staff-info">
+                <h3>Nathaniel Butterworth</h3>
+                <p class="staff-title">Exploration & Assets</p>
+                <p class="staff-bio">Leading geophysical surveying and tenement assessment across our NSW silver and
+                  silica portfolio.</p>
+              </div>
+            </div>
+            <!-- <div class="staff-card">
+              <div class="staff-photo-wrap">
+                <img src="assets/krystle.jpg" alt="Krystle" class="staff-photo">
+              </div>
+              <div class="staff-info">
+                <h3>Krystle Phillips</h3>
+                <p class="staff-title">Quarrying & Logistics</p>
+                <p class="staff-bio">Overseeing operations ensuring safety, efficiency, and environmental compliance at
+                  every stage.</p>
+              </div>
+            </div> -->
+            <div class="staff-card">
+              <div class="staff-photo-wrap">
+                <img src="assets/tane.jpg" alt="Tane" class="staff-photo">
+              </div>
+              <div class="staff-info">
+                <h3>Tane Butterworth</h3>
+                <p class="staff-title">Strategic Projects</p>
+                <p class="staff-bio">Managing the Development Application (DA) process and government liaison for our
+                  expanding resource assets.</p>
+              </div>
+            </div>
+            <div class="staff-card">
+              <div class="staff-photo-wrap">
+                <img src="assets/chris.jpg" alt="Chris" class="staff-photo">
+              </div>
+              <div class="staff-info">
+                <h3>Christian Crossie</h3>
+                <p class="staff-title">Corporate Development</p>
+                <p class="staff-bio">Building a world class team.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -156,7 +225,7 @@
               <h3>Project Overview</h3>
               <p>The <strong>TYR Project</strong> is located approximately 20 km southwest of Tenterfield, northern New
                 South Wales. The exploration tenement covers <strong>299 km²</strong> of highly prospective ground
-                within the New England Orogen — one of Australia's historically productive mineral provinces.</p>
+                within the New England Orogen, one of Australia's historically productive mineral provinces.</p>
               <p>The project hosts over <strong>145 recorded mineral occurrences</strong>, including high-grade silver
                 assays from historical workings such as the Ecuador deposit (4,710 ppm Ag) and the Torny Mine
                 (1,420 ppm Ag). Despite this endowment, the project remains <strong>largely underexplored</strong> for
@@ -164,23 +233,23 @@
             </div>
 
             <div class="info-block reveal">
-              <h3>Primary Resource — Silver</h3>
+              <h3>Primary Resource: Silver</h3>
               <p>Silver mineralisation at TYR is hosted within <strong>Early Permian Bondonga beds</strong>, forming two
                 main clusters:</p>
               <ul class="styled-list">
-                <li><strong>Mole River Group</strong> — northern tenement cluster, proximal to the Mole Granite contact
+                <li><strong>Mole River Group</strong>: northern tenement cluster, proximal to the Mole Granite contact
                 </li>
-                <li><strong>Clive Group</strong> — southern tenement cluster, distal polymetallic Ag-Pb-Zn</li>
+                <li><strong>Clive Group</strong>: southern tenement cluster, distal polymetallic Ag-Pb-Zn</li>
               </ul>
               <p>Mineralisation is structurally controlled and associated with the emplacement of the
                 <strong>Mole Granite</strong>, an I-Type Sn-W granite. Classic metal zonation radiates outward from the
-                granite — from proximal tin-tungsten to distal silver, lead, and zinc. Historical mining in the area
+                granite from proximal tin-tungsten to distal silver, lead, and zinc. Historical mining in the area
                 targeted silver, lead, zinc, arsenic, and tin.
               </p>
             </div>
 
             <div class="info-block reveal">
-              <h3>Secondary Resource — Hughs Hill Quartz</h3>
+              <h3>Secondary Resource: Hughs Hill Quartz</h3>
               <p>The <strong>Hughs Hill</strong> target represents a large, high-purity silica quartz occurrence within
                 the TYR tenement boundary. Quartz veining is a pervasive feature of the New England Orogen, where
                 significant granite intrusions have driven widespread hydrothermal silicification.</p>
@@ -220,12 +289,12 @@
             <div class="info-block reveal">
               <h3>Location &amp; Maps</h3>
               <div class="map-embed">
-                <iframe title="TYR Project — Tenterfield NSW"
+                <iframe title="TYR Project - Tenterfield NSW"
                   src="https://maps.google.com/maps?q=Tenterfield+NSW+Australia&z=10&output=embed" width="100%"
                   height="280" style="border:0; border-radius:6px;" allowfullscreen loading="lazy">
                 </iframe>
               </div>
-              <p class="map-caption">&#x1F4CD; TYR Project — ~20 km SW of Tenterfield, NSW</p>
+              <p class="map-caption">&#x1F4CD; TYR Project - ~20 km SW of Tenterfield, NSW</p>
             </div>
 
             <div class="info-block reveal">
@@ -533,7 +602,10 @@
     <footer>
       <div class="container">
         <div class="footer-inner">
-          <span class="logo">WARD <span>MINING GROUP</span></span>
+          <div class="logo">
+            <img src="assets/logo.svg" alt="Ward Mining Group" class="logo-img">
+            <span>WARD <span>MINING GROUP</span></span>
+          </div>
           <div class="footer-links">
             <a href="#burtorn">BURTORN Silver</a>
             <a href="#telluric-sands">Telluric Sands</a>
